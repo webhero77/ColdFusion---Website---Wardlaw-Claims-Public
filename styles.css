@@ -1,0 +1,486 @@
+
+/** centers whole body **/
+html, body, .mainDiv {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+	
+}
+
+.mainDiv {
+	margin: 0; padding: 0;
+    display: table-cell;
+	min-width:100%;
+	
+}
+
+/** centers whole body **/
+
+body {
+	margin:0;
+	font-family: Helvetica;
+	color: #474747;
+	font-size: 11pt;
+	background: #1E3C92;
+	min-height: 100%;			
+	min-width: 100%;
+}
+
+h1 a, h2 a, h3 a
+{
+	text-decoration: none;
+	color: #474747;
+}
+
+
+/** START styling of list for navigation **/
+/*the list of links (main container)*/
+#nav
+{
+	clear: none;
+	margin-right: 15px;
+	float: right;	
+	margin-top: 30px;
+	background: white;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.navLink
+{
+	color: gray;
+	border-left: 1px solid #DEDEDE;
+	padding: 20px 5px 0px 8px;
+	text-decoration: none;
+	word-wrap: normal;
+	display: table;
+}
+
+ul#menu {
+    margin:0;
+    position:relative;
+	clear: none;
+	display: inline;
+	float: left;
+}
+
+ul#menu li {
+    display:inline;
+    font-size:14px;
+    padding:10px 40px 10px 5px;
+    float:left;
+    position:relative;
+	border-left: 1px solid #DEDEDE;
+	text-decoration: none;
+	text-align: left;
+	min-width: 70px;
+}
+#menu li a
+{
+	text-decoration: none;
+	color: gray;
+	padding: 0;
+}
+
+ul#menu li a:hover, ul#menu li:hover > a  
+{
+    background:#F1;
+	text-decoration: underline;
+}
+
+/* Drop-Down Navigation */
+ul#menu li:hover > ul
+{
+    visibility:visible;
+    opacity:1;
+}
+
+/* Drop-Down Navigation - Main boxes */
+ul#menu ul, ul#menu ul li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    visibility:hidden;
+    position: absolute;
+    z-index: 99999;
+    background:white;
+    box-shadow:0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    opacity:0;
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+    transition:opacity 0.2s linear, visibility 0.2s linear;  
+}
+
+ul#menu ul {
+    top: 45px;
+    left: -1px;
+	text-decoration: none;
+}
+
+ul#menu ul li ul {
+	text-decoration: none;
+	left: -193px;
+	top: -1px;
+}
+
+/* defines each click-able menu item */
+ul#menu ul li {
+    clear:both;
+    width:140px;    
+	background: white;
+	text-decoration: none;
+	border: 1px solid #DEDEDE;
+	font-size: 9pt;
+	padding-left: 10px;
+}
+
+/* defines area of link tag */
+ul#menu ul li a {
+    background:white;
+    color:gray;    
+    display:inline;
+    float:left;
+    clear:both;
+    width:180px;
+	text-decoration: none;
+}
+
+ul#menu li a.first {
+    border-left: 0 none;
+	text-decoration: none;
+}
+
+ul#menu li a.last {
+    border-right: 0 none;
+	text-decoration: none;
+}
+
+.miniArrow
+{
+	font-size: 5pt;
+	vertical-align: middle;
+	height: 50px;
+	
+}
+
+
+/* END styling of list for navigation */
+
+
+/* top navigation definition */
+.topSection
+{
+	margin: 0;
+	padding: 0;
+	background: white;
+	display: table-cell;
+}
+
+
+/* START styling for TOP elements of header */
+/* START dimensions of items and effects */
+#splashTop div div.leftGradient, #splashTop div div.rightGradient, #normalTop div div.leftGradient, #normalTop div div.rightGradient
+{
+	float:left;
+	clear: none;
+	width: 26px;
+	background: linear-gradient(90deg, #1E3C92, white);  
+	margin: 0;
+	padding: 0;
+}
+
+#splashTop div div.navItems, #normalTop div div.navItems
+{
+	float: left;
+	background: white;
+}
+
+#splashTop div div.leftGradient, #splashTop div div.rightGradient
+{
+	height: 480px;
+}
+
+#normalTop div div.leftGradient, #normalTop div div.rightGradient
+{
+	height: 100px;
+}
+
+#splashTop div div.rightGradient, #normalTop div div.rightGradient
+{
+	margin-left: 0px;
+	float:right;
+	background: linear-gradient(90deg, white, #1E3C92);
+}
+
+#normalTop div div #nav
+{
+	margin-left: 96px;
+}
+
+#splashTop div div a .topImg
+{
+	margin-left: 25px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	vertical-align: middle;	
+}
+
+#normalTop div div a .topImg
+{
+	margin-left: 25px;
+	margin-top: 15px;
+	vertical-align: middle;		
+	
+}
+/* END dimensions of items and effects */
+
+
+
+.splashImg
+{
+	display: table-cell;
+	margin-top: 0px;
+	clear: none;
+	width: 940px;
+	height: 420px;
+	text-align: center;
+	margin-left: 12px;
+	position: relative;
+	z-Index: 9999;
+	box-shadow: 0px 30px 100px #888888;
+}
+
+#splashLinks .left
+{
+	width: 250px;
+	padding: 15px;
+	padding-right: 58px;
+}
+
+#splashContent
+{
+	position: absolute;
+	padding: 0px;
+	padding-top: 130px;
+	left: 0;
+	top: 480px;
+	background: white;
+	width: 100%;
+}
+
+#normalContent
+{
+	position: absolute;
+	padding: 0px;
+	left: 0;
+	top: 100px;
+	background: white;
+	width: 100%;
+	border-top: 1px solid #DEDEDE;
+	box-shadow: 0px 30px 100px #888888;
+}
+
+
+#normalTop
+{
+	display: table;
+	clear: both;
+}
+
+
+.navContent
+{
+	background: white;
+	width: 1020px;
+	text-align: center;
+	display: table;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+/* END styling for TOP elements of header */
+
+
+
+
+/* START sidebar styling */
+.sideBar, .content
+{
+	float: left;
+	margin: 0;
+	min-height: 500px;
+	min-height: 545px;
+}
+.sideBar
+{
+	padding-top: 20px ;
+	width: 210px;
+}
+
+.sideBar img
+{
+	padding-bottom: 20px ;
+}
+.sideBarQuote
+{
+	border-left: 5px solid #DEDEDE; 
+	font-style: italic;
+	padding: 10px;
+	font-size: smaller;
+}
+.sideBarQuotedBy
+{
+	text-align: right;
+	padding-bottom: 10px;
+	font-size: smaller;
+}
+
+/* END sidebar styling */
+
+
+.content
+{
+	padding-left: 20px;
+	padding-top: 5px ;
+	padding-bottom: 30px;
+	float:left;
+	width: 680px;
+	margin-left: 50px;
+	
+}
+
+
+
+/* START footer styles */
+#footerLinks .left
+{
+	padding: 15px;
+	padding-right: 26px;
+	width: 200px;
+	max-width: 200px;
+}
+#footerLinks  a, .copyright a, .icons a
+{
+	text-decoration: none;
+	color: white;
+	font-weight:bold;
+}
+#footerLinks  a
+{
+	font-size:smaller;
+}
+
+div #footerLinks
+{
+	color: white;
+}
+
+.footer
+{
+	padding-top: 00px;
+	width: 100%;
+	background: #1E3C92;
+
+}
+
+#footerObject
+{
+	display: table;
+	margin: 0;
+	width: 100%;
+	height: 240px;
+	overflow:hidden;
+	border-top: 3px solid cyan;
+}
+
+/* END footer styles */
+
+/* START styles centered around content */
+.innerDiv
+{	
+	display:table; /*allows centering */
+    vertical-align:middle;
+	margin: auto;
+	width: 970px;
+}
+
+
+.left{
+	
+    float: left;
+    padding: 20px;
+}
+
+.linkBar
+{
+	margin-left: 12px;
+}
+
+.icons
+{
+	padding-top: 60px;
+}
+
+.copyright
+{
+	color: white;
+	text-align: center;
+}
+
+.person
+{
+	width: 700px;
+	display: block;
+	clear: both;
+	height: 250px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #DEDEDE;
+}
+
+.team_photo, .team_bio
+{
+	float: left;
+}
+.team_photo
+{
+	width: 150px;
+}
+.team_bio
+{
+	width: 500px;
+	padding-left: 50px;
+}
+
+.person img
+{
+	padding-right: 10px;
+	padding-bottom: 10px;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 2px solid #CCCCCC;
+}
+
+.name
+{
+	font-size: 18pt;
+	color: #1E3C92;
+	padding-bottom: 5px;
+}
+
+.title
+{
+	font-size: 14pt;
+	padding-bottom: 10px;
+}
+
+.cfoutput
+{
+	display: inline;
+	
+}
+
+/* END styles centered around content */
